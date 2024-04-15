@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="descriptionTag" name="description" content="This is a description for the site.">
+    <title>Oficina de Ideias</title>
+    
+    <script src="code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="heyleia.com/js/analytics.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="heyleia.com/css/sweetalert.css" rel="stylesheet">
+    <script src="heyleia.com/js/swal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:800,800i&amp;display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i&amp;display=swap" rel="stylesheet">
+    
+    <style id="fontFamilyStyle">
+    
+    h1, h2, h3, h4, h5, h6, h1 div, h2 div, h3 div, h4 div, h5 div, h6 div {
+        font-family: 'Montserrat', sans-serif;
+    }
+    p, span, label, a, button, strong, div, em {
+        font-family: 'PT Sans', sans-serif;
+    }
+    </style>
+    <link href="heyleia.com/css/leia.css" rel="stylesheet">
+    <script>    
+        $.browser = {}; $.support.opacity = true;
+    </script>
+    <script src="lib/fancybox/jquery.fancybox-1.3.4.packd830.js?v=1700796282"></script>
+    <script src="lib/fancybox/jquery.easing-1.3.pack.js"></script>
+    <script src="lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script>
+        var setCategoryClicksBackup = function() {
+            $(".categoryButton").unbind();
+            $('.categoryButton').click(function(){
+                // let offsetHeight = document.getElementById('galleryRowContainer').offsetHeight.toString() + 'px';
+                var value = $(this).attr('data-filter');
+                // $('#galleryRowContainer').css({'min-height':offsetHeight}); 
+
+                // setTimeout(function(){
+                //     $('#galleryRowContainer').animate({'min-height':'0'});
+                // },3000)
+
+                if (value === 'all') {
+                    $('.categoryFilter').show('1000');
+                    $(this).addClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                } else if ($(this).hasClass('categoryButtonSelected')) {
+                    $('.categoryFilter').show('1000');
+                    $(this).removeClass('categoryButtonSelected');
+                    $('.allCategoryButton').addClass('categoryButtonSelected');
+                }
+                else {
+                    $('.categoryFilter').not('.' + value).hide('3000');
+                    $('.categoryFilter').filter('.' + value).show('3000');
+                    $('.allCategoryButton').removeClass('categoryButtonSelected');
+                    $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                    $(this).toggleClass('categoryButtonSelected');
+                }
+            });
+
+            $("a[rel=scrollGroup]").fancybox({
+                'transitionIn'		: 'fade',
+                'transitionOut'		: 'fade',
+                'titlePosition' 	: 'over',
+                'type'              : 'image',
+                'titleFormat'		: function(title) {
+                    return '<span id="fancybox-title-over">' + title + '</span>';
+                }
+            });
+        }
+    </script>
+    
+<meta id="bbafmabaelnnkondpfpjmdklbmfnbmol"><meta id="dcngeagmmhegagicpcmpinaoklddcgon"></head>
+<body>
+<div id="mainMenu" class="noCustomElement">
+    <div id="menuButtonWrap" class="noCustomElement">
+        <button class="menuButton" id="trigger-overlay" althref="null" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush open'">
+            <i class="openMenuIcon fa fa-bars" aria-hidden="true" altonclick="null" althref="null"></i>
+        </button>
+    </div>
+    <div id="menuOverlaySection" class="overlay overlay-contentpush" style="">
+        <div id="menuOuterRow" class="row innerTableContent noCustomElement">
+            <div id="menuBorder" class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 noCustomElement" style="max-height: 919px;">
+                <button id="close-menu" type="button" class="overlay-close" althref="null" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush'">
+                    <i class="closeMenuIcon fa fa-times" aria-hidden="true" altonclick="null" althref="null"></i>
+                </button>
+                <a id="menuTitle" class="navbar-brand page-scroll" altonclick="null" href="#">Oficina de Ideias</a>
+                <ul id="menuIcons" class="nav navbar-nav">
+                    
+        <li class="menuItemLi">
+                <a class="menuItemA" altonclick="null" href="https://instagram.com/oficinadeideiasinformatica"><i class="fab fa-facebook" altonclick="null" althref="null"></i></a>
+                <a class="menuItemA" altonclick="null" href="https://instagram.com/oficinadeideiasinformatica"><i class="fab fa-twitter" altonclick="null" althref="null"></i></a>
+                <a class="menuItemA" altonclick="null" href="https://instagram.com/oficinadeideiasinformatica"><i class="fab fa-instagram" altonclick="null" href="null"></i></a>
+            </li>
+                </ul>
+                <ul id="menuItems" class="nav navbar-nav">
+                    
+                <li class="menuItemLi">
+                    <a id="featuresMenuItem" class="menuItemA" altonclick="null" href="https://get.teamviewer.com/6yuuvx3">Teamviewer Host</a>
+                </li>
+                <li class="menuItemLi">
+                    <a id="bookMenuItem" class="menuItemA" altonclick="null" href="https://get.teamviewer.com/635e77g">Teamviewer QS</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #mainMenu {
+            text-align: center;
+            word-break: break-word;
+        }
+
+        #mainMenu .floatingToolbox {
+            z-index: 10000 !important;
+        }
+
+        #mainMenu .overlay ul {
+            height: auto;
+        }
+
+        #menuButtonWrap {
+            text-align: center;
+            position: fixed;
+            width: 20%;
+            left: 40%;
+            z-index: 1;
+        }
+
+        .menuButton {
+            font-size: 32px;
+            color: white;
+            border: none;
+        }
+
+        #trigger-overlay {
+            position: initial;
+            margin-top: 50px;
+            background: transparent;
+        }
+
+        #close-menu {
+            font-size: 30px;
+            background: transparent;
+            cursor: pointer;
+            color: black;
+            transition: 0.5s;
+        }
+
+        #close-menu:hover {
+            opacity: 0.5
+        }
+
+        #menuOverlaySection {
+            display: table;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgb(101,186,191), rgba(101,186,191,0.2));
+            z-index: 10;
+        }
+
+        .overlay-contentpush,
+        .overlay-contentpush.close {
+            visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: visibility 0s 0.5s;
+            transition: visibility 0s 0.5s;
+            -webkit-transition: opacity 0.8s ease-in;
+            -moz-transition: opacity 0.8s ease-in;
+            -o-transition: opacity 0.8s ease-in;
+            opacity: 0;
+        }
+
+        .overlay-contentpush.open {
+            visibility: visible;
+            -webkit-transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            -webkit-transition: opacity 0.8s ease-in;
+            -moz-transition: opacity 0.8s ease-in;
+            -o-transition: opacity 0.8s ease-in;
+            opacity: 1;
+        }
+
+        #menuBorder {
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        #menuTitle {
+            font-size: 40px;
+            margin-top: 50px;
+            color: black;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            line-height: normal;
+        }
+
+        #menuIcons {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #menuIcons .menuItemA {
+            color: black;
+            font-size: 30px;
+            display: inline;
+            padding: 0 25px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #menuIcons .menuItemA:hover {
+            opacity: 0.5;
+            background: transparent;
+        }
+
+        #menuItems {
+            width: 100%;
+            padding: 10px 0 30px;
+        }
+
+        #menuItems .menuItemLi {
+            width: 100%;
+            text-align: center;
+        }
+
+        #menuItems .menuItemLi a {
+            color: black;
+            font-size: 24px;
+            transition: 0.5s;
+        }
+
+        #menuItems .menuItemLi a:hover {
+            opacity: 0.5;
+            background-color: white;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #menuIcons .menuItemA {
+                padding: 0 18px;
+            }
+
+            #menuTitle {
+                margin-top: 0;
+            }
+        }
+    </style>
+</div>
+        <script>
+            $(document).ready(function() {
+                $('nav').css('display', 'block');
+                $('nav').slideDown();
+            });
+        </script>
+<header style="margin-bottom: 0px;">
+
+        <div class="sectionOverlay" id="headerOverlay" style="background: rgba(0, 0, 0, 0.3)"></div>
+        <div id="outerHeader" class="noCustomElement">
+    <div id="headerContainer" class="noCustomElement">
+        <div id="headerContent" class="noCustomElement">
+            <div class="row noCustomElement">
+                <div id="newTopBlock" class="block col-sm-8 col-sm-offset-3 col-xs-12 noCustomElement">
+                    <div id="iconContainer">
+                        <i id="facebookHeader" class="headerIcon animate fab fa-facebook" altonclick="null" althref="null"></i>
+                        <i id="instagramHeader" class="headerIcon animate fab fa-instagram" onclick="https://instagram.com/oficinadeideiasinformatica" href="https://instagram.com/oficinadeideiasinformatica"></i>
+                        <i id="twitterHeader" class="headerIcon animate fab fa-twitter" altonclick="null" althref="null"></i>
+                    </div> 
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <img id="headerLogoImage" src="img/2Rdxm-jggqe-1Ec3d-0eqNE-DuHvi.png" altonclick="null" althref="null"><div id="headerTitleWrap" class="block col-sm-8 col-sm-offset-3 col-xs-12">
+                    <h1 id="headerTitle" class="headerTitles animate" altonclick="null" althref="null">Oficina de Ideias</h1> 
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <div id="headerSubtitleWrap" class="block col-sm-6 col-sm-offset-5 col-xs-12">
+                    <h3 id="headerSubtitle" class="headerSubtitles animate" altonclick="null" althref="null">smart solutions for you</h3>
+                </div>
+            </div>
+            <div class="row noCustomElement">
+                <div class="block col-sm-6 col-sm-offset-5 col-xs-12 noCustomElement">
+                    <div id="headerButtons" class="animate"><div><a class="headerButton" altonclick="null" href="https://get.teamviewer.com/635e77g">Download TeamViewer QS</a></div></div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+
+        #headerContent {
+            color: white;
+            text-align: right;
+            overflow: hidden;
+            word-break: break-word;
+        }   
+
+        @keyframes pop-in {
+            0% {
+                opacity: 0;
+                transform: translateX(-20rem) scale(.8);
+                -webkit-transform: translateX(-20rem) scale(.8);
+            }
+            100% {
+                opacity: 1;
+                transform: none;
+                -webkit-transform: none;
+            }
+        }
+        
+        .animate {
+            animation: pop-in .6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .headerIcon {
+            font-size: 30px;
+            margin-left: 80px;
+            cursor: pointer;
+            transition: 0.3s;
+        }   
+
+        .headerIcon:hover {
+            color: rgba(255,255,255,0.5);
+        }
+
+        #facebookHeader {
+            animation-delay: 0.4s;
+        }
+
+        #instagramHeader {
+            animation-delay: 0.2s;
+        }
+
+        #headerTitle {
+            font-size: 120px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            animation-delay: 0.6s;
+            margin: 10px 0;
+        }
+        
+        #headerSubtitle {
+            font-size: 30px;
+            text-transform: uppercase;
+            animation-delay: 0.8s;
+        }
+
+        #headerButtons {
+            margin-top: 40px;
+            animation-delay: 1.0s;
+        }
+
+        .headerButton {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 6px 42px;
+            background-color: rgba(0,0,0,0.5);
+            border: 1px solid white;
+            border-radius: 2px;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        .headerButton:hover {
+            color: rgb(101,186,191);
+            background-color: white;
+            text-decoration: none;
+        }
+
+        header .customTitle {
+            font-size: 30px;
+            display: block;
+        }
+
+        header .customParagraph {
+            font-size: 20px;
+            display: block;
+        }
+
+        header .customLink,
+        header .customLink a {
+            color: white;
+            font-size: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        header .customLink:hover {
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        header .customIcon {
+            font-size: 30px;
+        }
+
+        header .customTitle,
+        header .customParagraph,
+        header .customLink,
+        header .customIcon,
+        header .customButton,
+        header .customImage,
+        header .customEmbed {
+            margin: 10px 0;
+        }
+        
+        header #iconContainer .customTitle,
+        header #iconContainer .customParagraph,
+        header #iconContainer .customLink,
+        header #iconContainer .customIcon,
+        header #iconContainer .customButton,
+        header #iconContainer .customImage,
+        header #iconContainer .customEmbed {
+            margin: 20px 0 0;
+            opacity: 0;
+            animation: pop-in .6s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        
+        header #headerTitleWrap .customTitle,
+        header #headerTitleWrap .customParagraph,
+        header #headerTitleWrap .customLink,
+        header #headerTitleWrap .customIcon,
+        header #headerTitleWrap .customButton,
+        header #headerTitleWrap .customImage,
+        header #headerTitleWrap .customEmbed {
+            margin: 0 0 10px;
+            opacity: 0;
+            animation: pop-in .6s ease-out forwards;
+            animation-delay: 0.7s;
+        }
+        
+        header #headerSubtitleWrap .customTitle,
+        header #headerSubtitleWrap .customParagraph,
+        header #headerSubtitleWrap .customLink,
+        header #headerSubtitleWrap .customIcon,
+        header #headerSubtitleWrap .customButton,
+        header #headerSubtitleWrap .customImage,
+        header #headerSubtitleWrap .customEmbed {
+            margin: 0;
+            opacity: 0;
+            animation: pop-in .6s ease-out forwards;
+            animation-delay: 0.9s;
+        }
+        
+        header #headerButtons .customTitle,
+        header #headerButtons .customParagraph,
+        header #headerButtons .customLink,
+        header #headerButtons .customIcon,
+        header #headerButtons .customButton,
+        header #headerButtons .customImage,
+        header #headerButtons .customEmbed {
+            margin: 20px 0 0;
+            opacity: 0;
+            animation: pop-in .6s ease-out forwards;
+            animation-delay: 1.1s;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            .headerIcon {
+                margin-left: 40px;
+            }
+
+            #headerContent {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            #headerTitle {
+                font-size: 55px;
+            }
+
+            #headerSubtitle {
+                font-size: 20px;
+            }
+
+            .headerButton {
+                font-size: 12px;
+            }
+
+            header .customTitle {
+                font-size: 24px;
+            }
+
+            header .customParagraph {
+                font-size: 16px;
+            }
+
+            header .customLink a {
+                font-size: 16px;
+            }
+
+            header #headerTitleWrap .customTitle,
+            header #headerTitleWrap .customParagraph,
+            header #headerTitleWrap .customLink,
+            header #headerTitleWrap .customIcon,
+            header #headerTitleWrap .customButton,
+            header #headerTitleWrap .customImage,
+            header #headerTitleWrap .customEmbed {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</div>
+        <style>
+
+            header {
+                background: url('img/oficina-LLXTb-K0RE4-0lREi-DuG6v-K04jX.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                background-attachment: fixed;
+            }
+            #headerLogoImage {
+                position: fixed;
+                left: 3%;
+                bottom: 10px;
+                width: 200px;
+                max-width: 30%;
+                z-index: 100;
+            }
+        </style>
+        
+        
+        
+    </header>
+    
+
+
+
+
+
+
+
+<div id="footer">
+    <h4 class="pageFooter" id="footerFour" altonclick="null" althref="null">© Oficina de Ideias Informática LTDA</h4>
+</div>
+
+<div id="newsletterOuter" delay="20000" enabled="false" style="display:none" class="noCustomElement">
+    <div id="newsOverlaySection" class="noCustomElement">
+        <div class="row innerTableContent noCustomElement">
+            <div id="newsletterBorder" class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 noCustomElement">
+                <button id="closeNewsletterButton" class="newsletterClose" althref="null" onclick="document.getElementById(&quot;newsletterOuter&quot;).style.display = &quot;none&quot;">
+                    <i class="newsletterCloseIcon fa fa-times" aria-hidden="true" altonclick="null" althref="null"></i>
+                </button>
+                <div id="newsletterTitleWrap"><h3 id="newsletterTitle" class="newsLetterTitles" altonclick="null" althref="null">SIGN UP</h3></div>
+                <div id="newsletterSubtitleWrap"><h4 id="newsletterSubtitle" class="newsletterSubtitles" altonclick="null" althref="null">JOIN OUR MAILING LIST AND START SAVING NOW</h4></div>
+                <form id="newsletterForm"> 
+                    <div id="newsletterRowContainer"> 
+                        <input id="newsletterInput" type="email" class="form-control" placeholder="EMAIL ADDRESS">
+                        <a id="newsletterButton" class="newsletterButton" althref="null" onclick="submitNewsletter()">JOIN NOW</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #newsLetterOuter {
+            word-break: break-word;
+        }
+
+        #closeNewsletterButton {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            border: none;
+            font-size: 25px;
+            background: transparent;
+            cursor: pointer;
+            color: black;
+            transition: 0.4s;
+        }
+
+        #closeNewsletterButton:hover {
+            opacity: 0.6;
+        } 
+
+        #newsOverlaySection {
+            display: table;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+        }
+
+        #newsletterBorder {
+            background-color: white;
+            box-shadow: 0 0 8px -1px white;
+        }
+
+        #newsletterTitle {
+            font-size: 60px;
+            margin: 50px 0 0;
+            color: black;
+            width: 100%;
+            font-weight: normal;
+        }
+
+        #newsletterSubtitle {
+            font-size: 22px;
+            margin: 10px 0 0;
+            letter-spacing: .08em;
+        }
+
+        #newsletterInput {
+            text-align: center;
+            width: 50%;
+            margin: 50px auto 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            box-shadow: none;
+            border-radius: 0;
+            border-bottom: 1px solid black;
+            color: black;
+        }
+
+        #newsletterInput::placeholder {
+            color: black;
+            letter-spacing: .09em;
+        }
+        
+        #newsletterInput:focus {
+            box-shadow: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid black;
+        }
+
+        #newsletterButton {
+            color: white;
+            font-size: 18px;
+            padding: 6px 32px;
+            margin: 20px 0 60px;
+            text-decoration: none;
+            border: 1px solid black;
+            background: black;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        #newsletterButton:focus {
+            color: white;
+        }
+
+        #newsletterButton:hover {
+            color: black;
+            background: white;
+        }
+
+        /* * * * * * * * */
+
+        #newsletterOuter .customTitle {
+            font-size: 40px;
+            display: block;
+        }
+
+        #newsletterOuter .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #newsletterOuter .customLink {
+            color: black;
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #newsletterOuter .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #newsletterOuter .customIcon {
+            font-size: 28px;
+        }
+
+        #newsletterOuter .customTitle,
+        #newsletterOuter .customParagraph,
+        #newsletterOuter .customLink,
+        #newsletterOuter .customIcon,
+        #newsletterOuter .customButton,
+        #newsletterOuter .customImage,
+        #newsletterOuter .customEmbed {
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #newsletterInput {
+                width: 100%;
+            }
+        }
+    </style>
+</div>
+
+<script id="generalJS">
+    $(document).ready(function() {
+        loadLeiaAd();
+        initializeSmoothScroll();
+        if (window.self !== window.top) {
+            if (document.getElementById('menuOverlaySection')) {
+                document.getElementById('menuOverlaySection').style.height = window.parent.innerHeight.toString() + 'px';
+            }
+            
+            if (document.getElementById('menuBorder')) {
+                document.getElementById('menuBorder').style.maxHeight = window.parent.innerHeight.toString() + 'px';
+            }
+            
+            if (window.orientation !== undefined && document.getElementById('headerBackgroundVideo')) {
+                updateBgimageSizes();
+                window.addEventListener('orientationchange', function() {
+                    updateBgimageSizes();
+                });
+            }
+        } else if (document.getElementById('newsletterOuter') && document.getElementById('newsletterOuter').getAttribute('enabled') === 'true') {
+            var time = parseInt(document.getElementById('newsletterOuter').getAttribute('delay'));
+            if (time > 0) {
+                setTimeout(function() {
+                    $('#newsletterOuter').css('opacity', '0');
+                    $('#newsletterOuter').css('display', '');
+                    $('#newsletterOuter').animate({opacity: '1'}, 1000);
+                }, time);
+            }
+        }
+    });
+    
+    var initializeSmoothScroll = function() {
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    }
+    
+    var updateBgimageSizes = function() {
+        document.getElementById('headerBackgroundVideo').style.height = document.getElementById('headerContainer').offsetHeight.toString() + 'px';
+    }
+
+    var loadLeiaAd = function() {
+        /*$.ajax({
+            url: 'https://heyleia.com/php/getAdStatus.php',
+            type: 'GET',
+            data: {'domain': window.location.hostname},
+            success: function(type) {
+                if (type === 'ad') {
+                    addLeiaAd();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        });*/
+    }
+    
+    var meetingToken;
+    var submitVideoChat = function() {
+        var name = document.getElementById('videoName').value;
+        var email = document.getElementById('videoEmail').value;
+
+        document.getElementById('launchChatButton').disabled = true;
+
+        var spinner = document.createElement('div');
+        var outer = document.createElement('div');
+
+        outer.id = 'spinnerLoading';
+        spinner.className = 'spinnerLoading';
+        outer.style.background = 'rgba(0,0,0,0.7)';
+        outer.style.borderRadius = '20px';
+        outer.style.position = 'fixed';
+        outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+        outer.style.width = '205px';
+        outer.style.top = '30%';
+        outer.style.height = '205px';
+        outer.style.zIndex = '10000';
+        spinner.style.marginLeft = '42.5px';
+        spinner.style.marginTop = '42.5px';
+        outer.appendChild(spinner);
+        document.body.appendChild(outer);
+
+        if (!addedSpinner) {
+            addedSpinner = true;
+            addSpinnerStyle();
+        }
+
+        $.ajax({
+            url: 'https://heyleia.com/php/scheduleMeeting.php',
+            type: 'POST',
+            data: {name: name, email: email, partner: ''},
+            success: function(data) {
+                meetingToken = data;
+                document.getElementById('launchChatButton').disabled = false;
+                swal('Meeting Ready', 'Click the "Launch Meeting" button to start your video chat.', 'success');
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+            },
+            error: function(err) {
+                console.log(err);
+                swal('Uh Oh', 'There was an error scheduling your live chat. Please try again in a few minutes!', 'error');
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+            }
+        })
+    }
+
+    var launchVideoChat = function() {
+        window.open('https://leia-nnqgk6mp7ic1uliqcw7o4n5ef.braidio.com/meetings/' + meetingToken, '_blank');
+    }
+
+    var showVideo = function() {
+        document.getElementById('videoChatOverlay').style.display = '';
+    }
+
+    var closeVideo = function() {
+        document.getElementById('videoChatOverlay').style.display = 'none';
+    }
+    
+    var shownSchedule = false;
+    var showSchedule = function() {
+        document.getElementById('schedulingOverlay').style.display = '';
+        
+        if (shownSchedule) {
+            var frame = document.getElementById('schedulingOverlay').getElementsByTagName('iframe')[0];
+            var src = frame.getAttribute('src').split('&v')[0];
+            frame.setAttribute('src', src + '&v=' + new Date().getTime());
+        }
+        
+        shownSchedule = true;
+    }
+    
+    var closeSchedule = function() {
+        document.getElementById('schedulingOverlay').style.display = 'none';
+    }
+
+    var addLeiaAd = function() {
+        var img = document.createElement('img');
+        var tag = document.createElement('a');
+        img.id = 'leiaAdLogo';
+        tag.id = 'leiaAdLogoA';
+        img.setAttribute('src', 'heyleia.com/images/poweredBy.png');
+
+        if (window.self === window.top && window.location.search !== '?site=live') {
+            tag.setAttribute('href', 'https://heyleia.com/direct?src=site');
+            tag.setAttribute('target', '_blank');
+        } else {
+            img.onclick = function() {
+                if (window.location.search === '?site=live') {
+                    swal('Remove Leia Ad', 'You can remove this ad by upgrading to Leia Pro! This includes hosting and everything else you need for your site.', 'info');
+                } else {
+                    swal({
+                        title: 'Remove Leia Ad',
+                        text: 'You can remove this ad by upgrading to Leia Pro! This includes hosting and everything else you need for your site.',
+                        type: 'info',
+                        icon: 'info',
+                        closeOnClickOutside: true,
+                        showCancelButton: true,
+                        buttons: {
+                            cancel: 'Not Now',
+                            submit: {
+                                text: 'Learn More',
+                                value: 'learn',
+                            }
+                        },
+                        closeOnConfirm: true
+                    }).then(function(isConfirm) {
+                        if (isConfirm == 'learn') {
+                            window.open('https://heyleia.com/upgrade', '_blank');
+                        } 
+                    }); 
+                }
+            }
+        }
+
+        tag.appendChild(img);
+        document.body.appendChild(tag);
+    }
+    
+    var mainColor = 'rgb(101,186,191)';
+    
+    var applyFancyTop = function(top) {
+        if (document.getElementById('fancyStyle')) {
+            document.getElementById('fancyStyle').parentElement.removeChild(document.getElementById('fancyStyle'));
+        }
+        
+        var style = document.createElement('style');
+        style.id = 'fancyStyle';
+        var txt = document.createTextNode('#fancybox-wrap {top: ' + top.toString() + 'px !important;}');
+        style.appendChild(txt);
+        document.body.appendChild(style);
+    }
+    
+    var addedSpinner = false;
+    var submitContactForm = function() {
+        swal("Are you sure you want to submit this message?", {
+            buttons: {
+                no: {
+                    text: "Cancel",
+                    value: "Cancel",
+                    className: 'swal-button swal-button--cancel',
+                    closeModal: false,
+                },
+                yes: {
+                    text: "Submit",
+                    value: "ok"
+                },
+            },
+            title: 'Confirmation',
+            type: 'info',
+            icon: 'info'
+        }).then((value) => {
+            if (value === 'Cancel') {
+                swal.close();
+            } else {
+                var spinner = document.createElement('div');
+                var outer = document.createElement('div');
+
+                outer.id = 'spinnerLoading';
+                spinner.className = 'spinnerLoading';
+                outer.style.background = 'rgba(0,0,0,0.7)';
+                outer.style.borderRadius = '20px';
+                outer.style.position = 'fixed';
+                outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+                outer.style.width = '205px';
+                outer.style.top = '30%';
+                outer.style.height = '205px';
+                outer.style.zIndex = '10000';
+                spinner.style.marginLeft = '42.5px';
+                spinner.style.marginTop = '42.5px';
+                outer.appendChild(spinner);
+                document.body.appendChild(outer);
+
+                if (!addedSpinner) {
+                    addedSpinner = true;
+                    addSpinnerStyle();
+                }
+
+                var dataObj = {}
+                if (document.getElementById('contactName')) {
+                    dataObj['name'] = document.getElementById('contactName').value;
+                }
+                if (document.getElementById('contactEmail')) {
+                    dataObj['email'] = document.getElementById('contactEmail').value;
+                }
+                if (document.getElementById('contactPhone')) {
+                    dataObj['phone'] = document.getElementById('contactPhone').value;
+                }
+                if (document.getElementById('contactCompany')) {
+                    dataObj['company'] = document.getElementById('contactCompany').value;
+                }
+                if (document.getElementById('contactStreet')) {
+                    dataObj['street'] = document.getElementById('contactStreet').value;
+                }
+                if (document.getElementById('contactCity')) {
+                    dataObj['city'] = document.getElementById('contactCity').value;
+                }
+                if (document.getElementById('contactState')) {
+                    dataObj['state'] = document.getElementById('contactState').value;
+                }
+                if (document.getElementById('contactSubject')) {
+                    dataObj['subject'] = document.getElementById('contactSubject').value;
+                }
+                if (document.getElementById('contactMessage')) {
+                    dataObj['message'] = document.getElementById('contactMessage').value;
+                }
+
+                $.ajax({
+                    url: 'https://heyleia.com/php/clientContact.php',
+                    data: dataObj,
+                    type: 'POST',
+                    success: function(data) {
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        if (data === 'success') {
+                            swal("Success", "You have successfully submitted your message! We will contact you at our earliest convenience.", "success");
+                            document.body.className = '';
+                        } else {
+                            swal("Uh Oh!", data, "error");
+                            document.body.className = '';
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                        document.body.className = '';
+                    }
+                });
+            }
+        });
+    }
+    
+    var submitNewsletter = function() {
+        var spinner = document.createElement('div');
+        var outer = document.createElement('div');
+
+        outer.id = 'spinnerLoading';
+        spinner.className = 'spinnerLoading';
+        outer.style.background = 'rgba(0,0,0,0.7)';
+        outer.style.borderRadius = '20px';
+        outer.style.position = 'fixed';
+        outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+        outer.style.width = '205px';
+        outer.style.top = '30%';
+        outer.style.height = '205px';
+        outer.style.zIndex = '10000';
+        spinner.style.marginLeft = '42.5px';
+        spinner.style.marginTop = '42.5px';
+        outer.appendChild(spinner);
+        document.body.appendChild(outer);
+
+        if (!addedSpinner) {
+            addedSpinner = true;
+            addSpinnerStyle();
+        }
+
+        var dataObj = {
+            email: document.getElementById('newsletterInput').value
+        }
+        
+        $.ajax({
+            url: 'https://heyleia.com/php/clientNewsletter.php',
+            data: dataObj,
+            type: 'POST',
+            success: function(data) {
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                if (data === 'success') {
+                    swal("Success", "You have successfully subscribed to our mailing list!", "success").then(function() {
+                        document.getElementById('newsletterOuter').style.display = 'none';
+                    });
+                    
+                    document.body.className = '';
+                } else {
+                    swal("Uh Oh!", data, "error");
+                    document.body.className = '';
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                document.body.className = '';
+            }
+        });
+    }
+    
+    var addSpinnerStyle = function() {
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+        document.body.appendChild(style);
+    };
+</script>
+</body>
+</html>
